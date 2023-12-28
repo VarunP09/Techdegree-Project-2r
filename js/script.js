@@ -54,7 +54,7 @@ This function will create and insert/append the elements needed for the paginati
 function addPagination(list){
    let pagenumber = Math.ceil(list.length/9);
    linkList.innerHTML = '';
-// Math.ceil always rounds a number up to the next largest integer. 
+//Math.ceil always rounds a number up to the next largest integer. 
 for(let i = 1; i <= pagenumber; i++){
 linkList.insertAdjacentHTML('beforeend',
    `<li>
@@ -86,18 +86,17 @@ linkList.insertAdjacentHTML('beforeend',
    header.insertAdjacentHTML("beforeend", searchBarHTML);
 }
 
-// Call functions
 showPage(data,1);
 addPagination(data);
 insertSearchBar();
 
-// Variables for search bar
+//Variables for search bar
 const searchField = document.getElementById('search');
 const searchBtn = document.querySelector('button.submit');
 
 
 
-// Click event for search bar
+//Click event for search bar
 searchField.addEventListener('keyup', () => {
    let searchText = searchField.value.toUpperCase();
    searchBtn.onclick = () => {
