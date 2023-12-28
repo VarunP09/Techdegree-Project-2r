@@ -13,7 +13,7 @@ For assistance:
 Create the `showPage` function
 This function will create and insert/append the elements needed to display a "page" of nine students
 */
-//use getElementsByClassName method to select the class('student-list')[0]
+
 const linkList = document.getElementsByClassName('link-list')[0];
 const studentList = document.getElementsByClassName('student-list')[0];
 let itemData = data;
@@ -96,11 +96,7 @@ const searchField = document.getElementById('search');
 const searchBtn = document.querySelector('button.submit');
 
 
-//click event for pagination buttons
 
- 
-//removed the active class first then add it to the event target
-//call the showPage function passing 2 arguments 
 // Click event for search bar
 searchField.addEventListener('keyup', () => {
    let searchText = searchField.value.toUpperCase();
